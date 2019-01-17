@@ -17,7 +17,8 @@ class State0 extends State
   
   void mousePressed(){
     if (training.clicked())
-        changeState();
+        //changeState();
+        nextState("training");
   }
   
   String stateName(){
