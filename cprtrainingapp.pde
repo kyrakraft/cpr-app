@@ -3,6 +3,7 @@
 
 State0 state0;
 StateTrain stateTrain;
+StateEmergency stateEmergency;
 
 
 
@@ -18,10 +19,6 @@ void settings()
 
 void setup()
 {
-  //states = new ArrayList<State>();
-  //states.add(new State0());
-  //states.add(new StateTrain());
-  
   state0 = new State0();
   stateTrain = new StateTrain();
   current = state0;
@@ -29,25 +26,14 @@ void setup()
 
 void draw()
 {
-  //states.get(currentStateNumber).display();
   current.display();
 }
 
 void mousePressed()
 {
-  
- //states.get(currentStateNumber).mousePressed();
  current.mousePressed();
  
 }
-
-//change states using array list. not what we want
-//void changeState()
-//{
-//   currentStateNumber++; 
-//}
-
-//change states
 
 
 void nextState(String nextState) 
@@ -60,17 +46,20 @@ void nextState(String nextState)
     handleStateChange_StateTrain(nextState);
   }
   
+   if(current == stateEmergency){
+    handleStateChange_StateEmergency(nextState);
+  }
+  
 }
   
-
-
-
-
-
 void handleStateChange_State0(String nextState)
 {
     if (nextState.equals("stateTrain"))
       current = stateTrain;
+      
+    if (nextState.equals("stateEmergency")){
+      current = stateEmergency;
+    }
 }
 
 void handleStateChange_StateTrain(String nextState)
@@ -78,4 +67,9 @@ void handleStateChange_StateTrain(String nextState)
     if (nextState.equals("blah")){
       //current = some state;
     }
+}
+
+void handleStateChange_StateEmergency(String nextState)
+{
+    
 }
