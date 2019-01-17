@@ -2,8 +2,9 @@
 //int currentStateNumber = 0; //no
 
 State0 state0;
-StateTrain stateTrain;
 StateEmergency stateEmergency;
+StateEInfant stateEInfant;
+StateTrain stateTrain;
 
 
 
@@ -21,6 +22,8 @@ void setup()
 {
   state0 = new State0();
   stateTrain = new StateTrain();
+  stateEmergency = new StateEmergency();
+  stateEInfant = new StateEInfant();
   current = state0;
 }
 
@@ -71,5 +74,7 @@ void handleStateChange_StateTrain(String nextState)
 
 void handleStateChange_StateEmergency(String nextState)
 {
-    
+    if (nextState.equals("stateEInfant")){
+      current = stateEInfant;
+    }
 }

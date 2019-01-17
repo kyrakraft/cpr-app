@@ -17,9 +17,9 @@ class StateTrain extends State
   void mousePressed(){
   }
   
-  String stateName(){
-    return "StateTrain";
-  }
+  //String stateName(){
+  //  return "StateTrain";
+  //}
   
   
   

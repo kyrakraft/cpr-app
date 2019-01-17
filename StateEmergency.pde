@@ -1,5 +1,9 @@
 class StateEmergency extends State
 {
+  
+  Button infant = new Button(0, 0, width, height/3, color(255, 0, 0));
+  Button child = new Button(0, height/3, width, height*2/3, color(0, 255, 0));
+  Button adult = new Button(0, height*2/3, width, height, color(0, 0, 255));
  
   
   public StateEmergency(){
@@ -7,19 +11,21 @@ class StateEmergency extends State
   }
   
   void display(){
-    background(200);
-    fill(255);
-    ellipse(30, 30, 30, 30);
-    text("emergency", 100, 100);
+    infant.display();
+    child.display();
+    adult.display();
+   
   
   }
   
   void mousePressed(){
+     if (infant.clicked())
+        nextState("stateEInfant");
   }
   
-  String stateName(){
-    return "StateEmergency";
-  }
+  //String stateName(){
+  //  return "StateEmergency";
+  //}
   
   
   

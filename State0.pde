@@ -23,9 +23,9 @@ class State0 extends State
         nextState("stateEmergency");
   }
   
-  String stateName(){
-    return "State0";
-  }
+  //String stateName(){
+  //  return "State0";
+  //}
   
   
   
