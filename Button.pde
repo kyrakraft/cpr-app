@@ -6,7 +6,7 @@ class Button
   float w;
   float h;
   color c;
-  boolean clicked = false;
+  //boolean clicked = false;
   
   public Button(float x, float y, float w, float h, color c)
   {
@@ -24,12 +24,18 @@ class Button
     rect(x, y, w, h);
   }
   
-  void click(int nextState)
+ 
+  
+  boolean clicked() // param?: int nextState
   {
-    if((mouseX > x && mouseX < x + w) && (mouseY > y && mouseY < y + h))
+    boolean clicked; 
+    if((mouseX > this.x && mouseX < this.x + this.w) && (mouseY > this.y && mouseY < this.y + this.h))
     {
-      clicked = true;
+       clicked = true;
     }
+    else clicked = false;
+    
+    return clicked;
   }
   
   

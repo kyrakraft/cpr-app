@@ -1,5 +1,7 @@
 ArrayList<State> states;
-int currentState = 0;
+int currentStateNumber = 0;
+
+
 
 
 void settings()
@@ -11,10 +13,23 @@ void setup()
 {
   states = new ArrayList<State>();
   states.add(new State0());
+  states.add(new StateTrain());
 }
 
 void draw()
 {
-  states.get(currentState).display();
+  states.get(currentStateNumber).display();
+}
+
+void mousePressed(){
   
+ states.get(currentStateNumber).mousePressed();
+ 
+  
+}
+
+
+void changeState()
+{
+   currentStateNumber++; 
 }

@@ -12,9 +12,18 @@ class State0 extends State
     fill(255);
     emergency.display();
     training.display();
+  
+  }
+  
+  void mousePressed(){
+    if (training.clicked())
+        changeState();
   }
   
   String stateName(){
     return "State0";
   }
+  
+  
+  
 }
