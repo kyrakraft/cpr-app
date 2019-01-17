@@ -57,7 +57,7 @@ void nextState(String nextState)
   }
   
   if(current == stateTrain){
-    handleStateChange_Training(nextState);
+    handleStateChange_StateTrain(nextState);
   }
   
 }
@@ -69,11 +69,11 @@ void nextState(String nextState)
 
 void handleStateChange_State0(String nextState)
 {
-    if (nextState.equals("training"))
+    if (nextState.equals("stateTrain"))
       current = stateTrain;
 }
 
-void handleStateChange_Training(String nextState)
+void handleStateChange_StateTrain(String nextState)
 {
     if (nextState.equals("blah")){
       //current = some state;
