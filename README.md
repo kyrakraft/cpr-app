@@ -1,1 +1,1 @@
-# cpr-app
+# cprtrainingapp
