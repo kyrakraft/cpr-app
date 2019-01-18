@@ -19,8 +19,12 @@ class Button
   
   void display()
   {
-    fill(c);
+    if (clicked())
+      fill(255);
+    else
+      fill(c);
     rect(x, y, w, h);
+    
   }
   
  

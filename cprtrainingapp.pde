@@ -4,6 +4,8 @@
 State0 state0;
 StateEmergency stateEmergency;
 StateEInfant stateEInfant;
+StateEChild stateEChild;
+StateEAdult stateEAdult;
 StateTrain stateTrain;
 
 
@@ -24,6 +26,8 @@ void setup()
   stateTrain = new StateTrain();
   stateEmergency = new StateEmergency();
   stateEInfant = new StateEInfant();
+  stateEChild = new StateEChild();
+  stateEAdult = new StateEAdult();
   current = state0;
 }
 
@@ -76,5 +80,13 @@ void handleStateChange_StateEmergency(String nextState)
 {
     if (nextState.equals("stateEInfant")){
       current = stateEInfant;
+    }
+    
+    if (nextState.equals("stateEChild")){
+      current = stateEChild;
+    }
+    
+    if (nextState.equals("stateEAdult")){
+      current = stateEAdult;
     }
 }
