@@ -6,6 +6,7 @@ class Button
   float w;
   float h;
   color c;
+  String name;
   
   public Button(float x, float y, float w, float h, color c)
   {
@@ -14,7 +15,7 @@ class Button
     this.w = w;
     this.h = h;
     this.c = c;
-    
+    // if we want this: this.name = s and add s as a param
   }
   
   void display()
