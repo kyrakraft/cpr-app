@@ -48,6 +48,9 @@ void mousePressed()
  
 }
 
+void previousState(){
+  
+}
 
 void nextState(String nextState) 
 {
