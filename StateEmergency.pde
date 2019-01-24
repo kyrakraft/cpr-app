@@ -22,21 +22,26 @@ class StateEmergency extends State
   void mousePressed(){
     
   
-     if (back.clicked())
-        nextState("state0");
+  //   if (back.clicked()){
+  //      //nextState("state0");
+  //      previousState();
+  //   }
+    super.mousePressed();
     
+    if (!(back.clicked()))
+      {  
     
-     else if (infant.clicked())
-        nextState("stateEInfant");
+       if (infant.clicked())
+          nextState("stateEInfant");
         
-     if (child.clicked()){
-        nextState("stateEChild");
-     }
+       if (child.clicked()){
+          nextState("stateEChild");
+       }
         
-     if (adult.clicked())
-        nextState("stateEAdult");
+       if (adult.clicked())
+          nextState("stateEAdult");
         
-    
+      }  
   }
   
   //String stateName(){
