@@ -1,6 +1,7 @@
 //ArrayList<State> states; //no
 //int currentStateNumber = 0; //no
 
+
 State0 state0;
 StateEmergency stateEmergency;
 StateEInfant stateEInfant;
@@ -9,6 +10,7 @@ StateEAdult stateEAdult;
 StateTrain stateTrain;
 
 
+ArrayList<String> visitedStates;
 
 State current;
 
@@ -28,6 +30,10 @@ void setup()
   stateEInfant = new StateEInfant();
   stateEChild = new StateEChild();
   stateEAdult = new StateEAdult();
+  
+  visitedStates = new ArrayList<String>();
+  visitedStates.add("state0");
+  
   current = state0;
 }
 
@@ -42,9 +48,16 @@ void mousePressed()
  
 }
 
+void previousState(){
+  
+}
 
 void nextState(String nextState) 
 {
+  visitedStates.add(nextState);
+  
+  
+  
   if(current == state0){
     handleStateChange_State0(nextState);
   }
@@ -57,27 +70,45 @@ void nextState(String nextState)
     handleStateChange_StateEmergency(nextState);
   }
   
+  if(current == stateEInfant){
+    handleStateChange_StateEInfant(nextState);
+  }
+  
 }
   
 void handleStateChange_State0(String nextState)
 {
+    
+  
     if (nextState.equals("stateTrain"))
       current = stateTrain;
       
     if (nextState.equals("stateEmergency")){
       current = stateEmergency;
     }
+    
+    
 }
 
 void handleStateChange_StateTrain(String nextState)
 {
+   
+    
     if (nextState.equals("blah")){
       //current = some state;
     }
+    
+    //back
+    if (nextState.equals("state0")){
+      current = state0;
+    }
+    
+   
 }
 
 void handleStateChange_StateEmergency(String nextState)
 {
+    
     if (nextState.equals("stateEInfant")){
       current = stateEInfant;
     }
@@ -89,4 +120,19 @@ void handleStateChange_StateEmergency(String nextState)
     if (nextState.equals("stateEAdult")){
       current = stateEAdult;
     }
+    
+    //back
+    if (nextState.equals("state0")){
+      current = state0;
+    }
+    
+}
+
+void handleStateChange_StateEInfant(String nextState)
+{
+    
+    if (nextState.equals("stateEmergency")){
+      current = stateEmergency;
+    }
+    
 }
