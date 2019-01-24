@@ -1,8 +1,8 @@
 class State0 extends State
 {
   //home screen
-  Button emergency = new Button(0, 0, width, height*3/4, color(255, 0, 0));
-  Button training = new Button(0, height*3/4, width, height/4, color(50, 50, 255));
+  Button emergency = new Button(0, 0, width, height*3/4, color(255, 0, 0), "Emergency");
+  Button training = new Button(0, height*3/4, width, height/4, color(50, 50, 255), "Training");
     
   public State0(){
     
@@ -12,19 +12,23 @@ class State0 extends State
     fill(255);
     emergency.display();
     training.display();
-  
+    drawBackButtons();
   }
   
   void mousePressed(){
+    
+        
     if (training.clicked())
         nextState("stateTrain");
         
     if (emergency.clicked())
         nextState("stateEmergency");
+        
+    
   }
   
   //String stateName(){
-  //  return "State0";
+  //  return "state0";
   //}
   
   

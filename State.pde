@@ -6,5 +6,15 @@ abstract class State
   
   abstract void mousePressed();
   
-  Button button;
+  //abstract String stateName();
+  
+  void drawBackButtons(){
+    
+    back.display();
+    //fill(100);
+    //ellipse(15, 15, 20, 20);
+  }
+  
+
+  Button back = new Button(15, 15, 30, 30, 200, "Back");
 }

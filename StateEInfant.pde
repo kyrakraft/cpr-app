@@ -12,10 +12,15 @@ class StateEInfant extends State
     fill(255);
     ellipse(30, 30, 30, 30);
     text("emergency - infant", 100, 100);
+    
+    drawBackButtons();
   
   }
   
   void mousePressed(){
+    
+    if (back.clicked())
+        nextState("stateEmergency");
   }
   
   //String stateName(){
