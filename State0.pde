@@ -17,14 +17,18 @@ class State0 extends State
   
   void mousePressed(){
     
-        
-    if (training.clicked())
-        nextState("stateTrain");
-        
-    if (emergency.clicked())
-        nextState("stateEmergency");
-        
+    super.mousePressed();
     
+     if (!(back.clicked()))
+      {  
+        
+        if (training.clicked())
+            nextState("stateTrain");
+        
+        if (emergency.clicked())
+            nextState("stateEmergency");
+        
+      }
   }
   
   //String stateName(){

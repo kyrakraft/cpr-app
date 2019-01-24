@@ -17,8 +17,7 @@ class StateTrain extends State
   }
   
   void mousePressed(){
-    if (back.clicked())
-        nextState("state0");
+    super.mousePressed();
   }
   
   //String stateName(){

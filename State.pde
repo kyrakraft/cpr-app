@@ -4,7 +4,7 @@ abstract class State
   abstract void display();
  // abstract String stateName();
   
-  abstract void mousePressed();
+  //abstract void mousePressed();
   
   //abstract String stateName();
   
@@ -14,6 +14,18 @@ abstract class State
     //fill(100);
     //ellipse(15, 15, 20, 20);
   }
+  
+   public void mousePressed(){ //not abstract
+       println("hi");
+      if (back.clicked()){
+        
+        println("lksdjlfksd");
+        
+        previousState();
+    }
+    
+    
+   }
   
 
   Button back = new Button(15, 15, 30, 30, 200, "Back");

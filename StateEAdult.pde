@@ -18,6 +18,7 @@ class StateEAdult extends State
   }
   
   void mousePressed(){
+    super.mousePressed();
   }
   
   

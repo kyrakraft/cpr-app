@@ -18,9 +18,11 @@ class StateEInfant extends State
   }
   
   void mousePressed(){
-    
-    if (back.clicked())
-        nextState("stateEmergency");
+    super.mousePressed();
+    //if (back.clicked()){
+    //    //nextState("stateEmergency");
+    //    previousState();
+    //}
   }
   
   //String stateName(){
