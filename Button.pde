@@ -8,14 +8,14 @@ class Button
   color c;
   String name;
   
-  public Button(float x, float y, float w, float h, color c)
+  public Button(float x, float y, float w, float h, color c, String s)
   {
     this.x = x;
     this.y = y;
     this.w = w;
     this.h = h;
     this.c = c;
-    // if we want this: this.name = s and add s as a param
+    this.name = s;
   }
   
   void display()
@@ -25,6 +25,11 @@ class Button
     else
       fill(c);
     rect(x, y, w, h);
+    
+    fill(0);
+    stroke(0);
+    textAlign(CENTER);
+    text(name, x+w/2, y+h/2);
     
   }
   
