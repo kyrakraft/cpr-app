@@ -12,7 +12,7 @@ class State0 extends State
     fill(255);
     emergency.display();
     training.display();
-    drawBackButtons();
+    //drawBackButtons();
   }
   
   void mousePressed(){

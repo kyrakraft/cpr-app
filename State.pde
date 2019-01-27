@@ -13,6 +13,8 @@ abstract class State
     back.display();
     //fill(100);
     //ellipse(15, 15, 20, 20);
+    
+    home.display();
   }
   
    public void mousePressed(){ //not abstract
@@ -24,9 +26,14 @@ abstract class State
         previousState();
     }
     
+    if (home.clicked()){
+      homeState();
+    }
+    
     
    }
   
 
-  Button back = new Button(15, 15, 30, 30, 200, "Back");
+  Button back = new Button(15, 15, 50, 50, 200, "BACK");
+  Button home = new Button(75, 15, 50, 50, 200, "HOME");
 }
