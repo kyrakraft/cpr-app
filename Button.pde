@@ -1,6 +1,5 @@
 class Button
 {
-  
   float x;
   float y;
   float w;
