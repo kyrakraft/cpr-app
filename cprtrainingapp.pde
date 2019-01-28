@@ -10,7 +10,7 @@ StateEAdult stateEAdult;
 StateTrain stateTrain;
 
 
-ArrayList<String> visitedStates;
+ArrayList<State> visitedStates;
 
 State current;
 
@@ -31,8 +31,8 @@ void setup()
   stateEChild = new StateEChild();
   stateEAdult = new StateEAdult();
   
-  visitedStates = new ArrayList<String>();
-  visitedStates.add("state0");
+  visitedStates = new ArrayList<State>();
+  //visitedStates.add(state0);
   
   current = state0;
 }
@@ -48,13 +48,28 @@ void mousePressed()
  
 }
 
+void homeState(){
+  current = state0;
+}
+
 void previousState(){
-  
+   
+  if (visitedStates.size()>0){
+  current = visitedStates.get(visitedStates.size()-1);
+  visitedStates.remove(visitedStates.size()-1);
+  }
 }
 
 void nextState(String nextState) 
 {
-  visitedStates.add(nextState);
+  visitedStates.add(current);
+  //println(current);
+  
+  
+  println("********");
+  for (State s : visitedStates){
+    println(s);
+  }
   
   
   
@@ -99,9 +114,9 @@ void handleStateChange_StateTrain(String nextState)
     }
     
     //back
-    if (nextState.equals("state0")){
-      current = state0;
-    }
+    //if (nextState.equals("state0")){
+    //  current = state0;
+    //}
     
    
 }
@@ -122,9 +137,9 @@ void handleStateChange_StateEmergency(String nextState)
     }
     
     //back
-    if (nextState.equals("state0")){
-      current = state0;
-    }
+    //if (nextState.equals("state0")){
+    //  current = state0;
+    //}
     
 }
 
