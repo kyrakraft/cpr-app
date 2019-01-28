@@ -8,6 +8,9 @@ StateEInfant stateEInfant;
 StateEChild stateEChild;
 StateEAdult stateEAdult;
 StateTrain stateTrain;
+StateTInfant stateTInfant;
+StateTChild stateTChild;
+StateTAdult stateTAdult;
 
 
 ArrayList<State> visitedStates;
@@ -30,6 +33,10 @@ void setup()
   stateEInfant = new StateEInfant();
   stateEChild = new StateEChild();
   stateEAdult = new StateEAdult();
+  
+  stateTInfant = new StateTInfant();
+  stateTChild = new StateTChild();
+  stateTAdult = new StateTAdult();
   
   visitedStates = new ArrayList<State>();
   //visitedStates.add(state0);
@@ -109,8 +116,16 @@ void handleStateChange_StateTrain(String nextState)
 {
    
     
-    if (nextState.equals("blah")){
-      //current = some state;
+    if (nextState.equals("stateTInfant")){
+      current = stateTInfant;
+    }
+    
+    if (nextState.equals("stateTChild")){
+      current = stateTChild;
+    }
+    
+    if (nextState.equals("stateTAdult")){
+      current = stateTAdult;
     }
     
     //back

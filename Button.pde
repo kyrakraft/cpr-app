@@ -21,9 +21,18 @@ class Button
   void display()
   {
     if (clicked())
-      fill(255);
-    else
+    {
+      
+      strokeWeight(h/50 + 2);
+      stroke(255);
       fill(c);
+    }
+    else
+    {
+      fill(c);
+      strokeWeight(0);
+      stroke(255);
+    }
     rect(x, y, w, h);
     
     fill(0);

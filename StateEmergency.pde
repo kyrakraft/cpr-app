@@ -1,9 +1,9 @@
 class StateEmergency extends State
 {
   
-  Button infant = new Button(0, 0, width, height/3, color(255, 0, 0), "Infant");
-  Button child = new Button(0, height/3, width, height/3, color(0, 255, 0),"Child");
-  Button adult = new Button(0, height*2/3, width, height/3, color(0, 0, 255), "Adult");
+  Button infant = new Button(0, 0, width, height/3, color(255, 50, 50), "Infant");
+  Button child = new Button(0, height/3, width, height/3, color(255, 125, 125),"Child");
+  Button adult = new Button(0, height*2/3, width, height/3, color(255, 190, 190), "Adult");
  
   
   public StateEmergency(){
