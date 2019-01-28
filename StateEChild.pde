@@ -18,10 +18,14 @@ class StateEChild extends State
   }
   
   void mousePressed(){
+<<<<<<< HEAD
+  
+=======
     super.mousePressed();
      //if (back.clicked()){
      //   previousState();
     //}
+>>>>>>> 36a35e4c0b112e6cf2277976ae3774a9b493c70c
   }
   
   

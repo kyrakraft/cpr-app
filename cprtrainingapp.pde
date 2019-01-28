@@ -48,6 +48,10 @@ void mousePressed()
  
 }
 
+void homeState(){
+  current = state0;
+}
+
 void previousState(){
    
   if (visitedStates.size()>0){
