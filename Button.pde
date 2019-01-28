@@ -22,14 +22,14 @@ class Button
     if (clicked())
     {
       
-      strokeWeight(h/50 + 2);
+      strokeWeight(h/50 + 3);
       stroke(255);
       fill(c);
     }
     else
     {
       fill(c);
-      strokeWeight(0);
+      strokeWeight(1);
       stroke(255);
     }
     rect(x, y, w, h);
