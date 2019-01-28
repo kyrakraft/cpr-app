@@ -8,9 +8,8 @@ class StateEInfant extends State
   
   void display(){
     
-    background(100);
+    background(255, 50, 50);
     fill(255);
-    ellipse(30, 30, 30, 30);
     text("emergency - infant", 100, 100);
     
     drawBackButtons();
