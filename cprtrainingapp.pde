@@ -11,7 +11,16 @@ StateTrain stateTrain;
 StateTInfant stateTInfant;
 StateTChild stateTChild;
 StateTAdult stateTAdult;
+StateCheckResponsive stateCheckResponsive;
 
+
+private enum Age { 
+  INFANT,
+  CHILD,
+  ADULT;
+}
+
+Age age = Age.CHILD;
 
 ArrayList<State> visitedStates;
 
@@ -34,6 +43,8 @@ void setup()
   stateEChild = new StateEChild();
   stateEAdult = new StateEAdult();
   
+  stateCheckResponsive = new StateCheckResponsive();
+  
   stateTInfant = new StateTInfant();
   stateTChild = new StateTChild();
   stateTAdult = new StateTAdult();
@@ -48,6 +59,7 @@ void draw()
 {
   current.display();
 }
+
 
 void mousePressed()
 {
@@ -131,24 +143,15 @@ void handleStateChange_StateTrain(String nextState)
     //back
     //if (nextState.equals("state0")){
     //  current = state0;
-    //}
-    
+    //}    
    
 }
 
 void handleStateChange_StateEmergency(String nextState)
 {
     
-    if (nextState.equals("stateEInfant")){
-      current = stateEInfant;
-    }
-    
-    if (nextState.equals("stateEChild")){
-      current = stateEChild;
-    }
-    
-    if (nextState.equals("stateEAdult")){
-      current = stateEAdult;
+    if (nextState.equals("StateCheckResponsive")){
+      current = stateCheckResponsive;
     }
     
     //back
