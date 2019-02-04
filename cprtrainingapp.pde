@@ -13,6 +13,8 @@ StateTChild stateTChild;
 StateTAdult stateTAdult;
 StateCheckResponsive stateCheckResponsive;
 
+HashMap<String, State> statesMap = new HashMap<String, State>();
+
 
 private enum Age { 
   INFANT,
@@ -27,7 +29,20 @@ ArrayList<State> visitedStates;
 State current;
 
 
-
+void initializeMap()
+{
+  statesMap.put("state0", state0);
+  statesMap.put("stateEmergency", stateEmergency);
+  statesMap.put("stateEInfant", stateEInfant);
+  statesMap.put("stateEChild", stateEChild);
+  statesMap.put("stateEAdult", stateEAdult);
+  statesMap.put("stateTrain", stateTrain);
+  statesMap.put("stateTInfant", stateTInfant);
+  statesMap.put("stateTChild", stateTChild);
+  statesMap.put("stateTAdult", stateTAdult);
+  statesMap.put("stateCheckResponsive", stateCheckResponsive);
+ 
+}
 
 void settings()
 {
