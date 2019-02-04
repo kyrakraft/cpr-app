@@ -65,6 +65,8 @@ void setup()
   //visitedStates.add(state0);
   
   current = state0;
+  
+  initializeMap();
 }
 
 void draw()
@@ -102,78 +104,13 @@ void nextState(String nextState)
     println(s);
   }
   
+  State newState = statesMap.get(nextState);
   
-  
-  if(current == state0){
-    handleStateChange_State0(nextState);
+  if (newState == null)
+  {
+    println("newState null: " + nextState);  
   }
   
-  if(current == stateTrain){
-    handleStateChange_StateTrain(nextState);
-  }
-  
-   if(current == stateEmergency){
-    handleStateChange_StateEmergency(nextState);
-  }
-  
-}
-  
-void handleStateChange_State0(String nextState)
-{
-    
-  
-    if (nextState.equals("stateTrain"))
-      current = stateTrain;
-      
-    if (nextState.equals("stateEmergency")){
-      current = stateEmergency;
-    }
-    
-    
-}
-
-void handleStateChange_StateTrain(String nextState)
-{
-   
-    
-    if (nextState.equals("stateTInfant")){
-      current = stateTInfant;
-    }
-    
-    if (nextState.equals("stateTChild")){
-      current = stateTChild;
-    }
-    
-    if (nextState.equals("stateTAdult")){
-      current = stateTAdult;
-    }
-    
-    //back
-    //if (nextState.equals("state0")){
-    //  current = state0;
-    //}    
-   
-}
-
-void handleStateChange_StateEmergency(String nextState)
-{
-    
-    if (nextState.equals("StateCheckResponsive")){
-      current = stateCheckResponsive;
-    }
-    
-    //back
-    //if (nextState.equals("state0")){
-    //  current = state0;
-    //}
-    
-}
-
-void handleStateChange_StateEInfant(String nextState)
-{
-    
-    if (nextState.equals("stateEmergency")){
-      current = stateEmergency;
-    }
+  current = newState;
     
 }
