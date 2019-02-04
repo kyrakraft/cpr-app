@@ -4,9 +4,9 @@
 
 State0 state0;
 StateEmergency stateEmergency;
-StateEInfant stateEInfant;
-StateEChild stateEChild;
-StateEAdult stateEAdult;
+//StateEInfant stateEInfant;
+//StateEChild stateEChild;
+//StateEAdult stateEAdult;
 StateTrain stateTrain;
 StateTInfant stateTInfant;
 StateTChild stateTChild;
@@ -54,9 +54,6 @@ void setup()
   state0 = new State0();
   stateTrain = new StateTrain();
   stateEmergency = new StateEmergency();
-  stateEInfant = new StateEInfant();
-  stateEChild = new StateEChild();
-  stateEAdult = new StateEAdult();
   
   stateCheckResponsive = new StateCheckResponsive();
   
@@ -117,10 +114,6 @@ void nextState(String nextState)
   
    if(current == stateEmergency){
     handleStateChange_StateEmergency(nextState);
-  }
-  
-  if(current == stateEInfant){
-    handleStateChange_StateEInfant(nextState);
   }
   
 }
