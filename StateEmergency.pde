@@ -32,17 +32,17 @@ class StateEmergency extends State
       {  
     
        if (infant.clicked()){
-          nextState("stateCheckResponsive");
+          nextState("stateCheckScene");
           age = Age.INFANT;
        }
         
        if (child.clicked()){
-          nextState("stateCheckResponsive");
+          nextState("stateCheckScene");
           age = Age.CHILD;
        }
         
        if (adult.clicked())
-          nextState("stateCheckResponsive");
+          nextState("stateCheckScene");
           age = Age.ADULT;
       }  
   }

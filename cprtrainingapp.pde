@@ -11,6 +11,7 @@ StateTrain stateTrain;
 StateTInfant stateTInfant;
 StateTChild stateTChild;
 StateTAdult stateTAdult;
+StateCheckScene stateCheckScene;
 StateCheckResponsive stateCheckResponsive;
 
 HashMap<String, State> statesMap = new HashMap<String, State>();
@@ -40,6 +41,7 @@ void initializeMap()
   statesMap.put("stateTInfant", stateTInfant);
   statesMap.put("stateTChild", stateTChild);
   statesMap.put("stateTAdult", stateTAdult);
+  statesMap.put("stateCheckScene", stateCheckScene);
   statesMap.put("stateCheckResponsive", stateCheckResponsive);
  
 }
@@ -56,6 +58,7 @@ void setup()
   stateEmergency = new StateEmergency();
   
   stateCheckResponsive = new StateCheckResponsive();
+  stateCheckScene = new StateCheckScene();
   
   stateTInfant = new StateTInfant();
   stateTChild = new StateTChild();
