@@ -1,8 +1,8 @@
 class State0 extends State
 {
   //home screen
-  Button emergency = new Button(0, 0, width, height*3/4, color(255, 80, 80), "Emergency");
-  Button training = new Button(0, height*3/4, width, height/4, color(80, 80, 255), "Training");
+  Button emergency = new Button(0, 0, width, height*3/4, color(255, 80, 80), "Emergency", 7);
+  Button training = new Button(0, height*3/4, width, height/4, color(80, 80, 255), "Training", 7);
     
   public State0(){
     

@@ -6,8 +6,9 @@ class Button
   float h;
   color c;
   String name;
+  int round;
   
-  public Button(float x, float y, float w, float h, color c, String s)
+  public Button(float x, float y, float w, float h, color c, String s, int r)
   {
     this.x = x;
     this.y = y;
@@ -15,6 +16,7 @@ class Button
     this.h = h;
     this.c = c;
     this.name = s;
+    round = r;
   }
   
   void display()
@@ -22,21 +24,21 @@ class Button
     if (clicked())
     {
       
-      strokeWeight(h/50 + 3);
+      strokeWeight(w/50);
       stroke(255);
       fill(c);
     }
     else
     {
       fill(c);
-      strokeWeight(1);
+      strokeWeight(w/20);
       stroke(255);
     }
-    rect(x, y, w, h);
+    rect(x, y, w, h, round);
     
     fill(0);
     stroke(0);
-    textAlign(CENTER);
+    textAlign(CENTER, CENTER);
     text(name, x+w/2, y+h/2);
     
   }

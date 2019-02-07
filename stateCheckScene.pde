@@ -6,7 +6,7 @@ class StateCheckScene extends State
   {
   }
   
-  Button yes = new Button(width/2-width/6, height/2, width/3, height/6, color(100, 252, 100), "YES");
+  Button yes = new Button(width/2-width/6, height/2, width/3, height/6, color(100, 252, 100), "YES", 15);
   
   void display()
   {
@@ -16,6 +16,7 @@ class StateCheckScene extends State
     
     //rectMode(CENTER);
     
+    //rect(300, 300, 70, 70, 7);
     
     yes.display();
     
