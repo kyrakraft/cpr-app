@@ -14,6 +14,18 @@ StateTAdult stateTAdult;
 StateCheckScene stateCheckScene;
 StateCheckResponsive stateCheckResponsive;
 
+PImage conciousnessAdult;
+PImage yellAdult;
+PImage checkBreathingAdult;
+PImage compressionsAdult;
+PImage conciousnessChild;
+PImage yellChild;
+PImage checkBreathingChild;
+PImage compressionsChild;
+PImage breathsChild;
+PImage setsChild;
+PImage AED;
+
 HashMap<String, State> statesMap = new HashMap<String, State>();
 
 
@@ -70,6 +82,18 @@ void setup()
   current = state0;
   
   initializeMap();
+  
+  conciousnessAdult = loadImage("conciousnessAdult.JPG");
+  yellAdult = loadImage("911Adult.JPG");
+  checkBreathingAdult = loadImage("checkBreathingAdult.JPG");
+  compressionsAdult = loadImage("compressionsAdult.JPG");
+  conciousnessChild = loadImage("conciousnessChild.JPG");
+  yellChild = loadImage("YellChild.JPG");
+  checkBreathingChild = loadImage("checkBreathingChild.JPG");
+  compressionsChild = loadImage("compressionsChild.JPG");
+  breathsChild = loadImage("breathsChild.JPG");
+  setsChild = loadImage("setsChild.JPG");
+  AED = loadImage("AED.JPG");
 }
 
 void draw()
