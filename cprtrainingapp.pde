@@ -84,11 +84,11 @@ void setup()
   initializeMap();
   
   conciousnessAdult = loadImage("conciousnessAdult.JPG");
-  yellAdult = loadImage("911Adult.JPG");
+  yellAdult = loadImage("yellAdult.JPG");
   checkBreathingAdult = loadImage("checkBreathingAdult.JPG");
   compressionsAdult = loadImage("compressionsAdult.JPG");
   conciousnessChild = loadImage("conciousnessChild.JPG");
-  yellChild = loadImage("YellChild.JPG");
+  yellChild = loadImage("yellChild.JPG");
   checkBreathingChild = loadImage("checkBreathingChild.JPG");
   compressionsChild = loadImage("compressionsChild.JPG");
   breathsChild = loadImage("breathsChild.JPG");

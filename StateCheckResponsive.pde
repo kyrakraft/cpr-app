@@ -10,6 +10,8 @@ class StateCheckResponsive extends State
     fill(255);
     
     drawBackButtons();
+    
+  //  image(conciousnessChild, 0,0, width,height/3);
   }
   
   void mousePressed()
