@@ -11,11 +11,11 @@ class StateCheckResponsive extends State
     
     
     if (age == Age.ADULT){
-      image(yellAdult, 50, 100, 300, 300);
+      image(conciousnessAdult, 50, 100, 300, 300);
     }
     
     else if (age == Age.CHILD){
-      image(yellChild, 50, 200, 300, 300);
+      image(conciousnessChild, 50, 200, 300, 300);
     }
     
     text("age: " + age, 50, 500);
