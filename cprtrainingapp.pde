@@ -4,9 +4,6 @@
 
 State0 state0;
 StateEmergency stateEmergency;
-//StateEInfant stateEInfant;
-//StateEChild stateEChild;
-//StateEAdult stateEAdult;
 StateTrain stateTrain;
 StateTInfant stateTInfant;
 StateTChild stateTChild;
@@ -46,9 +43,6 @@ void initializeMap()
 {
   statesMap.put("state0", state0);
   statesMap.put("stateEmergency", stateEmergency);
-  //statesMap.put("stateEInfant", stateEInfant);
-  //statesMap.put("stateEChild", stateEChild);
-  //statesMap.put("stateEAdult", stateEAdult);
   statesMap.put("stateTrain", stateTrain);
   statesMap.put("stateTInfant", stateTInfant);
   statesMap.put("stateTChild", stateTChild);
