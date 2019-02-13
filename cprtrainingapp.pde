@@ -4,15 +4,13 @@
 
 State0 state0;
 StateEmergency stateEmergency;
-//StateEInfant stateEInfant;
-//StateEChild stateEChild;
-//StateEAdult stateEAdult;
 StateTrain stateTrain;
 StateTInfant stateTInfant;
 StateTChild stateTChild;
 StateTAdult stateTAdult;
 StateCheckScene stateCheckScene;
 StateCheckResponsive stateCheckResponsive;
+StateGetHelp stateGetHelp;
 
 PImage conciousnessAdult;
 PImage yellAdult;
@@ -46,15 +44,13 @@ void initializeMap()
 {
   statesMap.put("state0", state0);
   statesMap.put("stateEmergency", stateEmergency);
-  //statesMap.put("stateEInfant", stateEInfant);
-  //statesMap.put("stateEChild", stateEChild);
-  //statesMap.put("stateEAdult", stateEAdult);
   statesMap.put("stateTrain", stateTrain);
   statesMap.put("stateTInfant", stateTInfant);
   statesMap.put("stateTChild", stateTChild);
   statesMap.put("stateTAdult", stateTAdult);
   statesMap.put("stateCheckScene", stateCheckScene);
   statesMap.put("stateCheckResponsive", stateCheckResponsive);
+  statesMap.put("stateGetHelp", stateGetHelp);
  
 }
 
@@ -71,11 +67,12 @@ void setup()
   
   stateCheckResponsive = new StateCheckResponsive();
   stateCheckScene = new StateCheckScene();
+  stateGetHelp = new StateGetHelp();
   
   stateTInfant = new StateTInfant();
   stateTChild = new StateTChild();
   stateTAdult = new StateTAdult();
-  
+    
   visitedStates = new ArrayList<State>();
   //visitedStates.add(state0);
   

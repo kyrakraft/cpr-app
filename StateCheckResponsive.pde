@@ -4,8 +4,16 @@ class StateCheckResponsive extends State
   {
   }
   
+   Button yesResponsive = new Button(width/2, 600, width/3, height/2, color(0), "YES", 15);
+   Button noResponsive = new Button(width/4, height/4, width/3, height/2, color(0), "NO", 15);
+
+  
   void display()
   {
+    
+    yesResponsive.display();
+    noResponsive.display();
+
     background(255, 190, 190);
     fill(255);
     
@@ -28,5 +36,9 @@ class StateCheckResponsive extends State
   void mousePressed()
   {
     super.mousePressed();
+    
+        
+    if (noResponsive.clicked())
+          nextState("stateGetHelp");
   }
 }

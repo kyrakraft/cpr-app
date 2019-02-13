@@ -13,11 +13,7 @@ class StateCheckScene extends State
     background(255, 190, 190);
     text("Have you checked to make sure the scene is safe?", width/2, 200);
     fill(255);
-    
-    //rectMode(CENTER);
-    
-    //rect(300, 300, 70, 70, 7);
-    
+ 
     yes.display();
     
     //rectMode(CORNER);
