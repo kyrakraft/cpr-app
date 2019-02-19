@@ -11,6 +11,9 @@ StateTAdult stateTAdult;
 StateCheckScene stateCheckScene;
 StateCheckResponsive stateCheckResponsive;
 StateGetHelp stateGetHelp;
+StateNoCPR stateNoCPR;
+StateCompressions stateCompressions;
+StateAED stateAED;
 
 PImage conciousnessAdult;
 PImage yellAdult;
@@ -51,6 +54,9 @@ void initializeMap()
   statesMap.put("stateCheckScene", stateCheckScene);
   statesMap.put("stateCheckResponsive", stateCheckResponsive);
   statesMap.put("stateGetHelp", stateGetHelp);
+  statesMap.put("stateNoCPR", stateNoCPR);
+  statesMap.put("stateCompressions", stateCompressions);
+  statesMap.put("stateAED", stateAED);
  
 }
 
@@ -68,6 +74,9 @@ void setup()
   stateCheckResponsive = new StateCheckResponsive();
   stateCheckScene = new StateCheckScene();
   stateGetHelp = new StateGetHelp();
+  stateNoCPR = new StateNoCPR();
+  stateCompressions = new StateCompressions();
+  stateAED = new StateAED();
   
   stateTInfant = new StateTInfant();
   stateTChild = new StateTChild();

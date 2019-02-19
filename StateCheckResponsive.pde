@@ -4,18 +4,18 @@ class StateCheckResponsive extends State
   {
   }
   
-   Button yesResponsive = new Button(width/2, 600, width/3, height/2, color(0), "YES", 15);
-   Button noResponsive = new Button(width/4, height/4, width/3, height/2, color(0), "NO", 15);
+   Button yesResponsive = new Button(0, height*3/4, width/2, height/6, color(100, 252, 100), "YES", 15);
+   Button noResponsive = new Button(width*1/2, height*3/4, width/2, height/6,color(255, 80, 80), "NO", 15);
 
   
   void display()
   {
-    
-    yesResponsive.display();
-    noResponsive.display();
 
     background(255, 190, 190);
     fill(255);
+    
+    yesResponsive.display();
+    noResponsive.display();
     
     
     if (age == Age.ADULT){
@@ -25,9 +25,7 @@ class StateCheckResponsive extends State
     else if (age == Age.CHILD){
       image(conciousnessChild, 50, 200, 300, 300);
     }
-    
-    text("age: " + age, 50, 500);
-    
+        
     drawBackButtons();
     
   //  image(conciousnessChild, 0,0, width,height/3);
@@ -40,5 +38,7 @@ class StateCheckResponsive extends State
         
     if (noResponsive.clicked())
           nextState("stateGetHelp");
+    else if(yesResponsive.clicked())
+          nextState("stateNoCPR");
   }
 }

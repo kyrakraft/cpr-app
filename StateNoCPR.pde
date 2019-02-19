@@ -8,7 +8,7 @@ class StateNoCPR extends State
   
   void display(){
     
-    background(255, 125, 125);
+    background(255, 190, 190);
     fill(255);
     text("cpr is not for you, mate!", 100, 100);
     
