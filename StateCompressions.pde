@@ -11,6 +11,8 @@ class StateCompressions extends State
    
     background(255, 190, 190);
     fill(255);   
+    
+    drawCircle(); 
  
     compressionsDone.display();
     
@@ -24,7 +26,7 @@ class StateCompressions extends State
       image(compressionsChild, 50, 200, 300, 300);
     }*/
     
-  //  drawCircle(); 
+//    drawCircle(); 
     
   }
   

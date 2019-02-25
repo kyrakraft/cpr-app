@@ -16,7 +16,7 @@ void drawCircle() {
  
   fill(255,0,0);  // fill red
   arc(width/2, height/2, 100, 100, 0, stop ,PIE); // draw red pie over second circle
-  textSize(32);
+
   
   fill(255);
   text("press!", width/2 + 50, height/2); 
