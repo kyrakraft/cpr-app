@@ -14,16 +14,18 @@ class StateCompressions extends State
  
     compressionsDone.display();
     
-    if (age == Age.ADULT){
+    drawBackButtons();
+    
+    /*if (age == Age.ADULT){
       image(compressionsAdult, 50, 100, 300, 300);
     }
     
     else if (age == Age.CHILD){
       image(compressionsChild, 50, 200, 300, 300);
-    }
+    }*/
     
-    drawBackButtons();
-
+  //  drawCircle(); 
+    
   }
   
   void mousePressed(){
