@@ -8,8 +8,9 @@ void drawCircle() {
       time = millis();
       fill(255,0,0);  // if more than 215 milliseconds passed set fill color to red
   }
+  float bpm = (60.0/ 100.0) * 1000;
   
-  float stop = TWO_PI / 600.0 * passedMillis;
+  float stop = TWO_PI / bpm * passedMillis;
   
   fill(255); // fill white
   ellipse(width/2,height/2,100,100); // draw second circle
