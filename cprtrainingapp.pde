@@ -1,6 +1,6 @@
 //ArrayList<State> states; //no
 //int currentStateNumber = 0; //no
-
+import processing.sound.*;
 
 State0 state0;
 StateEmergency stateEmergency;
