@@ -14,13 +14,21 @@ void drawCircle() {
   
   fill(255); // fill white
   ellipse(width/2,height/2,100,100); // draw second circle
+  
  
   fill(255,0,0);  // fill red
   arc(width/2, height/2, 100, 100, 0, stop ,PIE); // draw red pie over second circle
 
   
-  fill(255);
-  text("press!", width/2 + 50, height/2); 
+  if (passedMillis < 150 && passedMillis >0) {
+    fill(255,0,0);
+    textSize(25);
+  }
+  else {
+    fill (255);
+    textSize(12);
+  }
+  text("press!", width/2 + 80, height/2); 
   
   if (stop ==0){
     fill(0, 102, 153);
