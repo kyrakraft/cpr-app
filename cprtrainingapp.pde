@@ -100,6 +100,8 @@ void setup()
   breathsChild = loadImage("breathsChild.JPG");
   setsChild = loadImage("setsChild.JPG");
   AED = loadImage("AED.JPG");
+  
+  soundFile = new SoundFile(this, "beep.mp3");
 }
 
 void draw()
