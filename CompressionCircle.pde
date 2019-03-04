@@ -31,14 +31,14 @@ void drawCircle() {
 
   
   if (0< passedMillis && passedMillis < 150 && !soundFile.isPlaying()) {
-    fill(255,0,0);
-    textSize(25);
+    //fill(255,0,0);
+   // textSize(25);
     soundFile.play();
   }
   
   else {
     fill (255);
-    textSize(12);
+    //textSize(12);
   }
   //if (200< passedMillis && passedMillis < 300){
   //soundFile.stop();
