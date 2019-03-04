@@ -1,5 +1,11 @@
+AudioPlayer minimSound;
+Minim minim;
+
+
 int time = millis();
  SoundFile soundFile;
+ 
+ 
 void drawCircle() {
   noStroke();
  

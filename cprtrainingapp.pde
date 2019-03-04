@@ -1,3 +1,10 @@
+import ddf.minim.*;
+import ddf.minim.analysis.*;
+import ddf.minim.effects.*;
+import ddf.minim.signals.*;
+import ddf.minim.spi.*;
+import ddf.minim.ugens.*;
+
 //ArrayList<State> states; //no
 //int currentStateNumber = 0; //no
 import processing.sound.*;
@@ -14,6 +21,8 @@ StateGetHelp stateGetHelp;
 StateNoCPR stateNoCPR;
 StateCompressions stateCompressions;
 StateAED stateAED;
+
+
 
 PImage conciousnessAdult;
 PImage yellAdult;
@@ -101,7 +110,10 @@ void setup()
   setsChild = loadImage("setsChild.JPG");
   AED = loadImage("AED.JPG");
   
-  soundFile = new SoundFile(this, "beep.mp3");
+  soundFile = new SoundFile(this, "beep2.mp3");
+  
+  minim = new Minim(this);
+  minimSound = minim.loadFile("beep2.mp3");
 }
 
 void draw()
