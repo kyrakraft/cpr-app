@@ -9,8 +9,11 @@ class StateNoCPR extends State
   void display(){
     
     background(255, 190, 190);
-    fill(255);
-    text("cpr is not for you, mate!", 100, 100);
+    fill(0);
+    textSize(25);
+    text("cpr is not for you, mate!", width/2, 200);
+    
+    textSize(12);
     
     drawBackButtons();
   

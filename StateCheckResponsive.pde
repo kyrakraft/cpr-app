@@ -12,14 +12,19 @@ class StateCheckResponsive extends State
   {
 
     background(255, 190, 190);
-    fill(255);
+    fill(0);
+    
+    textSize(25);
+    text("Is the victim responsive?", width/2, 150);
+    
+    textSize(12);
     
     yesResponsive.display();
     noResponsive.display();
     
     
     if (age == Age.ADULT){
-      image(conciousnessAdult, 50, 100, 300, 300);
+      image(conciousnessAdult, 50, 200, 300, 300);
     }
     
     else if (age == Age.CHILD){

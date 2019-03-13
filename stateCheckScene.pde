@@ -11,8 +11,10 @@ class StateCheckScene extends State
   void display()
   {
     background(255, 190, 190);
-    text("Have you checked to make sure the scene is safe?", width/2, 200);
+    textSize(15);
+    text("Have you checked to make" + "\n" + "sure the scene is safe?", width/2, 200);
     fill(255);
+    textSize(12);
  
     yes.display();
     
