@@ -16,7 +16,7 @@ class Button
     this.h = h;
     this.c = c;
     this.name = s;
-    round = r;
+    round = r; 
   }
   
   void display()
