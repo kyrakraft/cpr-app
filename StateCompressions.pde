@@ -9,14 +9,14 @@ class StateCompressions extends State
   }
   
   void display(){
-   
     int time = millis();
     int seconds = time/1000;
     int minutes = 0;
-    if(seconds>60)
+    if(seconds>=60)
     {
       minutes++;
-      time = 0; //not working 
+      seconds -= 60;
+ 
     }
     
     background(255, 190, 190);
