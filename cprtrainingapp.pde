@@ -1,4 +1,4 @@
- import ddf.minim.*;
+import ddf.minim.*;
 import ddf.minim.analysis.*;
 import ddf.minim.effects.*;
 import ddf.minim.signals.*;
@@ -71,7 +71,7 @@ void initializeMap()
 
 void settings()
 {
-  size(400,700);
+  fullScreen();
 }
 
 void setup()

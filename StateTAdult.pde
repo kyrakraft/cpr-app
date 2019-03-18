@@ -10,7 +10,7 @@ class StateTAdult extends State
     
     background(180, 180, 255);
     fill(255);
-    text("training - adult", 100, 100);
+    text("training - adult", width/4, height/7);
     
     drawBackButtons();
   

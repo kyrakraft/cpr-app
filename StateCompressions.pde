@@ -22,7 +22,7 @@ class StateCompressions extends State
     background(255, 190, 190);
     fill(255);   
     
-    text(minutes + ":" + seconds, width/2, 200);
+    text(minutes + ":" + seconds, width/2, height*2/7);
     
     drawCircle(); 
  

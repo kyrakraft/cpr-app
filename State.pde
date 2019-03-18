@@ -34,6 +34,6 @@ abstract class State
    }
   
 
-  Button back = new Button(15, 15, 50, 50, 100, "BACK", 15);
-  Button home = new Button(75, 15, 50, 50, 100, "HOME", 15);
+  Button back = new Button(width/26.67, height/46.66, 50, 50, 100, "BACK", 15);
+  Button home = new Button(width/5.33, height/46.66, 50, 50, 100, "HOME", 15);
 }

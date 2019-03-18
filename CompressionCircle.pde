@@ -44,7 +44,7 @@ void drawCircle() {
   //soundFile.stop();
   //soundFile.jump(0);
   //}
-  text("press!", width/2 + 80, height/2); 
+  text("press!", width/2 + width/5, height/2); 
   
   if (stop ==0){
     fill(0, 102, 153);

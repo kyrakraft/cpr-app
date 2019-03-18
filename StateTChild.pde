@@ -10,7 +10,7 @@ class StateTChild extends State
     
     background(105, 105, 255);
     fill(255);
-    text("training - child", 100, 100);
+    text("training - child", width/4, height/7);
     
     drawBackButtons();
   

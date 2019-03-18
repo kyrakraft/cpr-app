@@ -12,7 +12,7 @@ class StateCheckScene extends State
   {
     background(255, 190, 190);
     textSize(15);
-    text("Have you checked to make" + "\n" + "sure the scene is safe?", width/2, 200);
+    text("Have you checked to make" + "\n" + "sure the scene is safe?", width/2, height*2/7);
     fill(255);
     textSize(12);
  
