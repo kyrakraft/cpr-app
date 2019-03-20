@@ -110,10 +110,7 @@ void setup()
   setsChild = loadImage("setsChild.JPG");
   AED = loadImage("AED.JPG");
   
-  //soundFile = new SoundFile(this, "beep2.mp3");
-  
-  //minim = new Minim(this);
-  //minimSound = minim.loadFile("beep2.mp3");
+  initializeSound(); //comment this out for mobile
 }
 
 void draw()

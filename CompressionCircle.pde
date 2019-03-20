@@ -1,9 +1,4 @@
-AudioPlayer minimSound;
-Minim minim;
-
-
 int time = millis();
-SoundFile soundFile;
  
  
 void drawCircle() {
@@ -31,19 +26,13 @@ void drawCircle() {
 
   
   if (0< passedMillis && passedMillis < 150 && !soundFile.isPlaying()) {
-    //fill(255,0,0);
-   // textSize(25);
-    soundFile.play();
+    playSound(); //cancel out for mobile
   }
   
   else {
     fill (255);
-    //textSize(12);
   }
-  //if (200< passedMillis && passedMillis < 300){
-  //soundFile.stop();
-  //soundFile.jump(0);
-  //}
+
   text("press!", width/2 + width/5, height/2); 
   
   if (stop ==0){

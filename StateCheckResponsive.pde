@@ -25,11 +25,11 @@ class StateCheckResponsive extends State
     imageMode(CENTER);
     
     if (age == Age.ADULT){
-      image(conciousnessAdult, width/2, height/2, 300, 300);
+      image(conciousnessAdult, width/2, height/2, width/4, width/4);
     }
     
     else if (age == Age.CHILD){
-      image(conciousnessChild, width/2, height/2, 300, 300);
+      image(conciousnessChild, width/2, height/2, width/4, width/4);
     }
         
     drawBackButtons();
