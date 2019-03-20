@@ -14,13 +14,13 @@ class StateGetHelp extends State
     
     gotHelp.display();
     
-    
+    imageMode(CENTER);
     if (age == Age.ADULT){
-      image(yellAdult, width/8, height*2/7, 300, 300);
+      image(yellAdult, width/2, height/2, width*3/4, height*3/7);
     }
     
     else if (age == Age.CHILD){
-      image(yellChild, width/8, height*2/7, 300, 300);
+      image(yellChild, width/2, height/2, width*3/4, height*3/7);
     }
         
     drawBackButtons();

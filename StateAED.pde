@@ -10,8 +10,8 @@ class StateAED extends State
 
     background(255, 190, 190);
     fill(255);
-    
-    image(AED, width/8, height/7, 300, 300);
+    imageMode(CENTER);
+    image(AED, width/2, height/2, width*3/4, height*3/7);
 
     
     drawBackButtons();

@@ -3,7 +3,7 @@ Minim minim;
 
 
 int time = millis();
- SoundFile soundFile;
+ //SoundFile soundFile;
  
  
 void drawCircle() {
@@ -30,7 +30,7 @@ void drawCircle() {
   arc(width/2, height/2, 100, 100, 0, stop ,PIE); // draw red pie over second circle
 
   
-  if (0< passedMillis && passedMillis < 150 && !soundFile.isPlaying()) {
+ /* if (0< passedMillis && passedMillis < 150 && !soundFile.isPlaying()) {
     //fill(255,0,0);
    // textSize(25);
     soundFile.play();
@@ -39,7 +39,7 @@ void drawCircle() {
   else {
     fill (255);
     //textSize(12);
-  }
+  }*/
   //if (200< passedMillis && passedMillis < 300){
   //soundFile.stop();
   //soundFile.jump(0);

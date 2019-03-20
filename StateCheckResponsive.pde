@@ -22,13 +22,14 @@ class StateCheckResponsive extends State
     yesResponsive.display();
     noResponsive.display();
     
+    imageMode(CENTER);
     
     if (age == Age.ADULT){
-      image(conciousnessAdult, width/8, height*2/7, 300, 300);
+      image(conciousnessAdult, width/2, height/2, 300, 300);
     }
     
     else if (age == Age.CHILD){
-      image(conciousnessChild, width/8, height*2/7, 300, 300);
+      image(conciousnessChild, width/2, height/2, 300, 300);
     }
         
     drawBackButtons();
