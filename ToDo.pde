@@ -1,5 +1,7 @@
 /*
 
+TO CHANGE TO MOBILE COMMENT OUT LINE 113 IN CPRTRAININGAPP AND LINE 29 COMPRESSIONCIRCLE
+
 1. Check responsiveness (tap and shout)
 2. Yell for help. Send someone to phone 911 and get an AED (if possible)
 3. Look for no breathing or only gasping

@@ -37,9 +37,7 @@ class StateCompressions extends State
     else if (age == Age.CHILD){
       image(compressionsChild, 50, 200, 300, 300);
     }*/
-    
-//    drawCircle(); 
-    
+        
   }
   
   void mousePressed(){
