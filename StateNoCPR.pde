@@ -13,7 +13,7 @@ class StateNoCPR extends State
     textSize(width/16);
     text("cpr is not for you, mate!", width/2, height*2/7);
     
-    textSize(width/33.3);
+    textSize(12);
     
     drawBackButtons();
   
