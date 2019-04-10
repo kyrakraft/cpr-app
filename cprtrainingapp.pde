@@ -38,14 +38,22 @@ PImage AED;
 
 HashMap<String, State> statesMap = new HashMap<String, State>();
 
-
+/*
 private enum Age { 
   INFANT,
   CHILD,
   ADULT;
 }
+*/
 
-Age age = Age.CHILD;
+class Age
+{
+    public static final int INFANT = 0;
+    public static final int CHILD = 1;
+    public static final int ADULT = 2;
+}
+
+int age = Age.CHILD;
 
 ArrayList<State> visitedStates;
 
@@ -69,13 +77,9 @@ void initializeMap()
  
 }
 
-void settings()
-{
-  fullScreen();
-}
-
 void setup()
 {
+  size(400, 800);
   state0 = new State0();
   stateTrain = new StateTrain();
   stateEmergency = new StateEmergency();
@@ -110,7 +114,7 @@ void setup()
   setsChild = loadImage("setsChild.JPG");
   AED = loadImage("AED.JPG");
   
-  initializeSound(); //comment this out for mobile
+  //initializeSound(); //comment this out for mobile
 }
 
 void draw()
