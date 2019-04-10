@@ -1,9 +1,9 @@
 class StateEmergency extends State
 {
   
-  Button infant = new Button(0, 0, width, height/3, color(255, 50, 50), "Infant", 7);
-  Button child = new Button(0, height/3, width, height/3, color(255, 125, 125),"Child", 7);
-  Button adult = new Button(0, height*2/3, width, height/3, color(255, 190, 190), "Adult", 7);
+  //Button infant = new Button(0, 0, width, height/3, color(255, 50, 50), "Infant", 7);
+  Button child = new Button(0, 0, width, height/2, color(255, 125, 125),"Child", 7);
+  Button adult = new Button(0, height/2, width, height/2, color(255, 190, 190), "Adult", 7);
  
   
   public StateEmergency(){
@@ -11,7 +11,7 @@ class StateEmergency extends State
   }
   
   void display(){
-    infant.display();
+//infant.display();
     child.display();
     adult.display();
     drawBackButtons();
@@ -31,11 +31,11 @@ class StateEmergency extends State
     if (!(back.clicked()))
       {  
     
-       if (infant.clicked()){
+   /*    if (infant.clicked()){
           age = Age.INFANT;
-          nextState("stateCheckScene");
+         nextState("stateCheckScene");
           
-       }
+       } */
         
        if (child.clicked()){
           age = Age.CHILD;
