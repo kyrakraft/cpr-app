@@ -14,5 +14,9 @@ void initializeSound()
 
 void playSound()
 {
+   if (soundFile == null || soundFile.isPlaying())
+        return;
+
    soundFile.play();
 }
+
