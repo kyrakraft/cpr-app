@@ -114,7 +114,7 @@ void setup()
   setsChild = loadImage("setsChild.JPG");
   AED = loadImage("AED.JPG");
   
-  //initializeSound(); //comment this out for mobile
+  initializeSound(); //comment this out for mobile
 }
 
 void draw()
