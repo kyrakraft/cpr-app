@@ -11,7 +11,7 @@ class StateNoCPR extends State
     background(255, 190, 190);
     fill(0);
     textSize(width/16);
-    text("cpr is not for you, mate!", width/2, height*2/7);
+    text("Call 911 immediately and do NOT perform CPR.", width/2, height*2/7);
     
     textSize(12);
     
