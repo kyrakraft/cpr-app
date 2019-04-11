@@ -22,7 +22,7 @@ StateNoCPR stateNoCPR;
 StateCompressions stateCompressions;
 StateAED stateAED;
 
-
+PFont font;
 
 PImage conciousnessAdult;
 PImage yellAdult;
@@ -90,6 +90,8 @@ void setup()
   stateNoCPR = new StateNoCPR();
   stateCompressions = new StateCompressions();
   stateAED = new StateAED();
+  
+  font = createFont("Benton Sans Bold.otf", 12);
   
   stateTInfant = new StateTInfant();
   stateTChild = new StateTChild();
