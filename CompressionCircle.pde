@@ -1,4 +1,5 @@
 int time = millis();
+int r = 100;
  
  
 void drawCircle() {
@@ -18,22 +19,29 @@ void drawCircle() {
   float stop = TWO_PI / bpmillis * passedMillis;
   
   fill(255); // fill white
-  ellipse(width/2,height/2,100,100); // draw second circle
+  ellipse(width/2,height/2,r,r); // draw second circle
   
  
   fill(255,0,0);  // fill red
-  arc(width/2, height/2, 100, 100, 0, stop ,PIE); // draw red pie over second circle
+  
+  if (stop >3*PI/2 && stop < 2*PI){
+    fill(255,0,0);
+    ellipse(width/2, height/2, r, r);
+  }
+  
+  //arc(width/2, height/2, 100, 100, 0, stop ,PIE); // draw red pie over second circle
 
   
   if (0< passedMillis && passedMillis < 150 && !soundFile.isPlaying()) {
     playSound(); //cancel out for mobile
+    
   }
   
   else {
     fill (255);
   }
 
-  text("press!", width/2 + width/5, height/2); 
+  text("press when the circle is red!", width/2, height/2 + height/8); 
   
   if (stop ==0){
     fill(0, 102, 153);
