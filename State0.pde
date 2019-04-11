@@ -12,10 +12,10 @@ class State0 extends State
     fill(255);
      emergency.display();
     textMode(CENTER);
-    textSize(width/53);
+    textSize(width/30);
     text("Welcome to Marlborough Computer Science Projects", width/2, height/4);
     textSize(12);
-    text("This app is for educational purposes only. In the case of a real emergency, call 911.", width/2, height*3/4);
+    text("This app is for educational purposes only. \n In the case of a real emergency, call 911.", width/2, height*3/4);
    // training.display();
     //drawBackButtons();
   }
