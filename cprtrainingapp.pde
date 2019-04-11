@@ -1,9 +1,24 @@
-import ddf.minim.*;
-import ddf.minim.analysis.*;
-import ddf.minim.effects.*;
-import ddf.minim.signals.*;
-import ddf.minim.spi.*;
-import ddf.minim.ugens.*;
+//
+// cprtrainingapp
+//
+// Marlborough School
+// Honors Computer Science Projects 2018-19
+//
+
+
+/* processing.js preload directives for images */
+/* @pjs preload="data/conciousnessAdult.JPG"; */
+/* @pjs preload="data/yellAdult.JPG"; */
+/* @pjs preload="data/checkBreathingAdult.JPG"; */
+/* @pjs preload="data/compressionsAdult.JPG"; */
+/* @pjs preload="data/conciousnessChild.JPG"; */
+/* @pjs preload="data/yellChild.JPG"; */
+/* @pjs preload="data/checkBreathingChild.JPG"; */
+/* @pjs preload="data/compressionsChild.JPG"; */
+/* @pjs preload="data/breathsChild.JPG"; */
+/* @pjs preload="data/setsChild.JPG"; */
+/* @pjs preload="data/AED.JPG"; */
+
 
 //ArrayList<State> states; //no
 //int currentStateNumber = 0; //no
@@ -104,17 +119,17 @@ void setup()
   
   initializeMap();
   
-  conciousnessAdult = loadImage("conciousnessAdult.JPG");
-  yellAdult = loadImage("yellAdult.JPG");
-  checkBreathingAdult = loadImage("checkBreathingAdult.JPG");
-  compressionsAdult = loadImage("compressionsAdult.JPG");
-  conciousnessChild = loadImage("conciousnessChild.JPG");
-  yellChild = loadImage("yellChild.JPG");
-  checkBreathingChild = loadImage("checkBreathingChild.JPG");
-  compressionsChild = loadImage("compressionsChild.JPG");
-  breathsChild = loadImage("breathsChild.JPG");
-  setsChild = loadImage("setsChild.JPG");
-  AED = loadImage("AED.JPG");
+  conciousnessAdult = loadImage("data/conciousnessAdult.JPG");
+  yellAdult = loadImage("data/yellAdult.JPG");
+  checkBreathingAdult = loadImage("data/checkBreathingAdult.JPG");
+  compressionsAdult = loadImage("data/compressionsAdult.JPG");
+  conciousnessChild = loadImage("data/conciousnessChild.JPG");
+  yellChild = loadImage("data/yellChild.JPG");
+  checkBreathingChild = loadImage("data/checkBreathingChild.JPG");
+  compressionsChild = loadImage("data/compressionsChild.JPG");
+  breathsChild = loadImage("data/breathsChild.JPG");
+  setsChild = loadImage("data/setsChild.JPG");
+  AED = loadImage("data/AED.JPG");
   
   initializeSound(); //comment this out for mobile
 }
