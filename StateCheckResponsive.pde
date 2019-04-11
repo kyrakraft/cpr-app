@@ -4,14 +4,14 @@ class StateCheckResponsive extends State
   {
   }
   
-   Button yesResponsive = new Button(0, height*3/4, width/2, height/6, color(100, 252, 100), "YES", 15);
-   Button noResponsive = new Button(width*1/2, height*3/4, width/2, height/6,color(255, 80, 80), "NO", 15);
+   Button yesResponsive = new Button(0, height*3/4, width/2, height/6, color(38, 8, 89), "YES", 15, color(241, 229, 199));
+   Button noResponsive = new Button(width*1/2, height*3/4, width/2, height/6,color(38, 8, 89), "NO", 15, color(241, 229, 199));
 
   
   void display()
   {
 
-    background(255, 190, 190);
+    background(241, 229, 199);
     fill(0);
     
     textSize(25);

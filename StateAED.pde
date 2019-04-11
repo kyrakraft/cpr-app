@@ -8,7 +8,7 @@ class StateAED extends State
   void display()
   {
 
-    background(255, 190, 190);
+    background(241, 229, 199);
     fill(255);
     imageMode(CENTER);
     image(AED, width/2, height/2, width/4, width/4);

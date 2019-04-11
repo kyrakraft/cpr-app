@@ -1,6 +1,6 @@
 class StateGetHelp extends State
 {
-   Button gotHelp = new Button(0, height*3/4, width, height/6, color(100, 252, 100), "NEXT", 15);
+   Button gotHelp = new Button(0, height*3/4, width, height/6, color(38, 8, 89), "NEXT", 15, color(241, 229, 199));
 
   public StateGetHelp()
   {
@@ -9,7 +9,7 @@ class StateGetHelp extends State
   void display()  
   {
     
-    background(255, 190, 190);
+    background(241, 229, 199);
     fill(255);
     
     gotHelp.display();

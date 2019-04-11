@@ -7,6 +7,7 @@ class Button
   color c;
   String name;
   int round;
+  color f;
   
   public Button(float x, float y, float w, float h, color c, String s, int r)
   {
@@ -17,6 +18,18 @@ class Button
     this.c = c;
     this.name = s;
     round = r; 
+  }
+  
+    public Button(float x, float y, float w, float h, color c, String s, int r, color f)
+  {
+    this.x = x;
+    this.y = y;
+    this.w = w;
+    this.h = h;
+    this.c = c;
+    this.name = s;
+    round = r; 
+    this.f = f;
   }
   
   void display()
@@ -38,6 +51,7 @@ class Button
     
     fill(0);
     stroke(0);
+    fill(f);
     textAlign(CENTER, CENTER);
     text(name, x+w/2, y+h/2);
     

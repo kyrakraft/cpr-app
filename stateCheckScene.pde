@@ -6,12 +6,13 @@ class StateCheckScene extends State
   {
   }
   
-  Button yes = new Button(width/2-width/6, height/2, width/3, height/6, color(100, 252, 100), "YES", 15);
+  Button yes = new Button(width/2-width/6, height/2, width/3, height/6, color(38, 8, 89), "YES", 15, color(241, 229, 199));
   
   void display()
   {
-    background(255, 190, 190);
+    background(241, 229, 199);
     textSize(15);
+    fill(0);
     text("Have you checked to make" + "\n" + "sure the scene is safe?", width/2, height*2/7);
     fill(255);
     textSize(12);

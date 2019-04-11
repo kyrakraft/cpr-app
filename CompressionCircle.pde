@@ -18,21 +18,21 @@ void drawCircle() {
   
   float stop = TWO_PI / bpmillis * passedMillis;
   
-  fill(255); // fill white
+  fill(125, 107, 155); // fill white
   ellipse(width/2,height/2,r,r); // draw second circle
   
  
   fill(255,0,0);  // fill red
   
   if (stop >3*PI/2 && stop < 2*PI){
-    fill(255,0,0);
+    fill(255, 210, 0);
     ellipse(width/2, height/2, r, r);
   }
   
   //arc(width/2, height/2, 100, 100, 0, stop ,PIE); // draw red pie over second circle
 
   
-  if (0< passedMillis && passedMillis < 150 && !soundFile.isPlaying()) {
+  if (0< passedMillis && passedMillis < 20 && !soundFile.isPlaying()) {
     playSound(); //cancel out for mobile
     
   }
@@ -40,10 +40,11 @@ void drawCircle() {
   else {
     fill (255);
   }
-
-  text("press when the circle is red!", width/2, height/2 + height/8); 
   
-  if (stop ==0){
-    fill(0, 102, 153);
-  }
+  fill(0);
+  text("press when the circle is yellow!", width/2, height/2 + height/8); 
+  
+ // if (stop ==0){
+   // fill(0, 102, 153);
+  //}
 }
