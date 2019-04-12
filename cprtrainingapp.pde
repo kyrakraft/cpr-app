@@ -1,7 +1,8 @@
 /*
     cprtrainingapp -- a mobile app for CPR training
 
-    Honors Computer Science Projects 2018-19, 
+    Honors Computer Science Projects 2018-19
+    Marlborough School
     in collaboration with Children's Hospital Los Angeles
 
     Copyright (C) 2019 Marlborough School
