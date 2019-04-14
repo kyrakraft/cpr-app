@@ -3,7 +3,7 @@ class StateEmergency extends State
   
   //Button infant = new Button(0, 0, width, height/3, color(255, 50, 50), "Infant", 7);
   Button child = new Button(0, 0, width, height/2, color(125, 107, 155),"Child", 7);
-  Button adult = new Button(0, height/2, width, height/2, color(255, 210, 0), "Adult", 7);
+  Button adult = new Button(0, height/2, width, height/2, color(113, 112, 115), "Adult", 7);
  
   
   public StateEmergency(){
