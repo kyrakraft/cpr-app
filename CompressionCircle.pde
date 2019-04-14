@@ -31,10 +31,8 @@ void drawCircle() {
   
   //arc(width/2, height/2, 100, 100, 0, stop ,PIE); // draw red pie over second circle
 
-  
-  if (0< passedMillis && passedMillis < 20 && !soundFile.isPlaying()) {
-    playSound(); //cancel out for mobile
-    
+  if (0 < passedMillis && passedMillis < 20) {
+    playSound();
   }
   
   else {
@@ -42,7 +40,7 @@ void drawCircle() {
   }
   
   fill(0);
-  text("press when the circle is yellow!", width/2, height/2 + height/8); 
+  text("Perform compressions!", width/2, height/2 + height/8); 
   
  // if (stop ==0){
    // fill(0, 102, 153);

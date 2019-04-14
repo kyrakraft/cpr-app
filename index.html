@@ -50,10 +50,32 @@
 <script src="buzz.min.js" type="text/javascript"></script>
 
 <script type="text/javascript">
-function initializeSound()
-{
 
-}
+    var bound = false;
+
+    function bindJavascript() 
+    {
+        var pjs = Processing.getInstanceById("cprtrainingapp");
+
+        if (pjs != null) {
+          pjs.bindJavascript(this);
+          bound = true;
+        }
+
+        if (!bound) setTimeout(bindJavascript, 250);
+    }
+
+    bindJavascript();
+
+    function initializeSound() {}
+
+    var beepSound = new buzz.sound( "data/beep2", { formats: [ "mp3"] });
+
+    function playSound() {
+        beepSound.load();
+        beepSound.play();
+    }
+
 </script>
 
 

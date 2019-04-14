@@ -1,9 +1,41 @@
-import ddf.minim.*;
-import ddf.minim.analysis.*;
-import ddf.minim.effects.*;
-import ddf.minim.signals.*;
-import ddf.minim.spi.*;
-import ddf.minim.ugens.*;
+/*
+    cprtrainingapp -- a mobile app for CPR training
+
+    Honors Computer Science Projects 2018-19
+    Marlborough School
+    in collaboration with Children's Hospital Los Angeles
+
+    Copyright (C) 2019 Marlborough School
+
+    This program is free software; you can redistribute it and/or
+    modify it under the terms of the GNU General Public License
+    as published by the Free Software Foundation; either version 2
+    of the License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
+/* processing.js preload directives for images */
+/* @pjs preload="data/conciousnessAdult.JPG"; */
+/* @pjs preload="data/yellAdult.JPG"; */
+/* @pjs preload="data/checkBreathingAdult.JPG"; */
+/* @pjs preload="data/compressionsAdult.JPG"; */
+/* @pjs preload="data/conciousnessChild.JPG"; */
+/* @pjs preload="data/yellChild.JPG"; */
+/* @pjs preload="data/checkBreathingChild.JPG"; */
+/* @pjs preload="data/compressionsChild.JPG"; */
+/* @pjs preload="data/breathsChild.JPG"; */
+/* @pjs preload="data/setsChild.JPG"; */
+/* @pjs preload="data/AED.JPG"; */
+
 
 //ArrayList<State> states; //no
 //int currentStateNumber = 0; //no
@@ -107,17 +139,17 @@ void setup()
   
   initializeMap();
   
-  conciousnessAdult = loadImage("conciousnessAdult.JPG");
-  yellAdult = loadImage("yellAdult.JPG");
-  checkBreathingAdult = loadImage("checkBreathingAdult.JPG");
-  compressionsAdult = loadImage("compressionsAdult.JPG");
-  conciousnessChild = loadImage("conciousnessChild.JPG");
-  yellChild = loadImage("yellChild.JPG");
-  checkBreathingChild = loadImage("checkBreathingChild.JPG");
-  compressionsChild = loadImage("compressionsChild.JPG");
-  breathsChild = loadImage("breathsChild.JPG");
-  setsChild = loadImage("setsChild.JPG");
-  AED = loadImage("AED.JPG");
+  conciousnessAdult = loadImage("data/conciousnessAdult.JPG");
+  yellAdult = loadImage("data/yellAdult.JPG");
+  checkBreathingAdult = loadImage("data/checkBreathingAdult.JPG");
+  compressionsAdult = loadImage("data/compressionsAdult.JPG");
+  conciousnessChild = loadImage("data/conciousnessChild.JPG");
+  yellChild = loadImage("data/yellChild.JPG");
+  checkBreathingChild = loadImage("data/checkBreathingChild.JPG");
+  compressionsChild = loadImage("data/compressionsChild.JPG");
+  breathsChild = loadImage("data/breathsChild.JPG");
+  setsChild = loadImage("data/setsChild.JPG");
+  AED = loadImage("data/AED.JPG");
   
   CHLogo = loadImage("CHLogo.png");
   MbroLogo = loadImage("MbroLogo.png");
