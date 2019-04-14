@@ -14,6 +14,12 @@ class State0 extends State
     textMode(CENTER);
     textSize(width/30);
     text("Welcome to Marlborough Computer Science Projects", width/2, height/4);
+    fill(255);
+    noStroke();
+    rect(0, height*2/3, width, height/3);
+    imageMode(CENTER);
+    image(MbroLogo, width/2, height*3/4);
+    image(CHLogo, width/2, height*3.6/4, width, height*1/4);
     textSize(12);
     text("This app is for educational purposes only. \n In the case of a real emergency, call 911.", width/2, height*3/4);
    // training.display();

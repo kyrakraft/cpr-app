@@ -36,6 +36,9 @@ PImage breathsChild;
 PImage setsChild;
 PImage AED;
 
+PImage CHLogo;
+PImage MbroLogo;
+
 HashMap<String, State> statesMap = new HashMap<String, State>();
 
 /*
@@ -115,6 +118,9 @@ void setup()
   breathsChild = loadImage("breathsChild.JPG");
   setsChild = loadImage("setsChild.JPG");
   AED = loadImage("AED.JPG");
+  
+  CHLogo = loadImage("CHLogo.png");
+  MbroLogo = loadImage("MbroLogo.png");
   
   initializeSound(); //comment this out for mobile
 }
