@@ -178,7 +178,7 @@ void resizeImages()
 
 void draw()
 {
-  if (AED.width != (int)(width*.7))
+  if (yellAdult.width != (int)(width*.7) || AED.width != (int)(width*.7))
         resizeImages(); // hack for web version
 
   current.display();
