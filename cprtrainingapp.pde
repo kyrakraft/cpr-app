@@ -154,11 +154,33 @@ void setup()
   CHLogo = loadImage("CHLogo.png");
   MbroLogo = loadImage("MbroLogo.png");
   
+  resizeImages();
   initializeSound(); //comment this out for mobile
 }
 
+void resizeImages()
+{
+    conciousnessAdult.resize((int)(width*.7), 0); 
+    yellAdult.resize((int)(width*.7), 0); 
+    checkBreathingAdult.resize((int)(width*.7), 0); 
+    compressionsAdult.resize((int)(width*.7), 0); 
+
+    conciousnessChild.resize((int)(width*.7), 0); 
+    yellChild.resize((int)(width*.7), 0); 
+    checkBreathingChild.resize((int)(width*.7), 0); 
+    compressionsChild.resize((int)(width*.7), 0); 
+
+    breathsChild.resize((int)(width*.7), 0); 
+    setsChild.resize((int)(width*.7), 0); 
+    AED.resize((int)(width*.7), 0);
+}
+
+
 void draw()
 {
+  if (AED.width != (int)(width*.7))
+        resizeImages(); // hack for web version
+
   current.display();
 }
 

@@ -16,15 +16,14 @@ class StateGetHelp extends State
     
     imageMode(CENTER);
     if (age == Age.ADULT){
-      image(yellAdult, width/2, height/2, width/4, width/4);
+      image(yellAdult, width/2, height/2);
     }
     
     else if (age == Age.CHILD){
-      image(yellChild, width/2, height/2, width/4, width/4);
+      image(yellChild, width/2, height/2);
     }
         
     drawBackButtons();
-    
   }
   
   void mousePressed()
