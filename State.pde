@@ -18,19 +18,13 @@ abstract class State
   }
   
    public void mousePressed(){ //not abstract
-       println("hi");
       if (back.clicked()){
-        
-        println("lksdjlfksd");
-        
         previousState();
     }
     
     if (home.clicked()){
       homeState();
     }
-    
-    
    }
   
 

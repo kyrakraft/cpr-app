@@ -186,19 +186,21 @@ void nextState(String nextState)
   visitedStates.add(current);
   //println(current);
   
-  
+  /*
   println("********");
   for (State s : visitedStates){
     println(s);
   }
+  */
   
   State newState = statesMap.get(nextState);
   
+  /*
   if (newState == null)
   {
     println("newState null: " + nextState);  
   }
+  */
   
   current = newState;
-    
 }
