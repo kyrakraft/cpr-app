@@ -13,6 +13,7 @@ class State0 extends State
      emergency.display();
     textMode(CENTER);
     textSize(width/10);
+    imageMode(CORNER);
     text("CPR Training App", width/2, height*1.3/3);
     textSize(width/30);
     text("Welcome to Marlborough Computer Science Projects", width/2, height/8);
