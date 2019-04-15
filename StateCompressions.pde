@@ -7,22 +7,28 @@ class StateCompressions extends State
   public StateCompressions(){
     
   }
+
+  private int time;
+  private int seconds;
+  private int minutes;
   
   void display(){
-    int time = millis();
-    int seconds = time/1000;
-    int minutes = 0;
+
+    time = millis();
+    seconds = (int)(time/1000);
+    minutes = 0;
+
     if(seconds>=60)
     {
       minutes++;
       seconds -= 60;
- 
     }
     
     background(241, 229, 199);
     fill(0);   
     
-    text(minutes + ":" + seconds, width/2, height*2/7);
+    textSize(18);
+    text("Elapsed time: " + minutes + " min " + seconds + " sec", width/2, height*2/7);
     
     drawCircle(); 
  
