@@ -4,7 +4,8 @@ This is a mobile app for CPR training, written by students in the Honors
 Computer Science Projects 2018-19 class at Marlborough School, in collaboration
 with Children's Hospital Los Angeles.  The app is for educational use only.
 
-[Web version here](https://kyrakraft.github.io/cprtrainingapp/)
+The app is written in Processing, and runs on Android mobile devices.  Here is
+a [web version](https://kyrakraft.github.io/cprtrainingapp/) of the app.
 
 Copyright (C) 2019 Marlborough School
 
