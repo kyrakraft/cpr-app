@@ -139,20 +139,20 @@ void setup()
   
   initializeMap();
   
-  conciousnessAdult = loadImage("conciousnessAdult.JPG");
-  yellAdult = loadImage("yellAdult.JPG");
-  checkBreathingAdult = loadImage("checkBreathingAdult.JPG");
-  compressionsAdult = loadImage("compressionsAdult.JPG");
-  conciousnessChild = loadImage("conciousnessChild.JPG");
-  yellChild = loadImage("yellChild.JPG");
-  checkBreathingChild = loadImage("checkBreathingChild.JPG");
-  compressionsChild = loadImage("compressionsChild.JPG");
-  breathsChild = loadImage("breathsChild.JPG");
-  setsChild = loadImage("setsChild.JPG");
-  AED = loadImage("AED.JPG");
+  conciousnessAdult = loadImage("data/conciousnessAdult.JPG");
+  yellAdult = loadImage("data/yellAdult.JPG");
+  checkBreathingAdult = loadImage("data/checkBreathingAdult.JPG");
+  compressionsAdult = loadImage("data/compressionsAdult.JPG");
+  conciousnessChild = loadImage("data/conciousnessChild.JPG");
+  yellChild = loadImage("data/yellChild.JPG");
+  checkBreathingChild = loadImage("data/checkBreathingChild.JPG");
+  compressionsChild = loadImage("data/compressionsChild.JPG");
+  breathsChild = loadImage("data/breathsChild.JPG");
+  setsChild = loadImage("data/setsChild.JPG");
+  AED = loadImage("data/AED.JPG");
   
-  CHLogo = loadImage("CHLogo.png");
-  MbroLogo = loadImage("MbroLogo.png");
+  CHLogo = loadImage("data/CHLogo.png");
+  MbroLogo = loadImage("data/MbroLogo.png");
   
   resizeImages();
   initializeSound(); //comment this out for mobile
