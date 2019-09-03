@@ -53,6 +53,7 @@ class Button
     stroke(0);
     fill(f);
     textFont(font);
+    textSize(w/8);
     textAlign(CENTER, CENTER);
     text(name, x+w/2, y+h/2);
     
